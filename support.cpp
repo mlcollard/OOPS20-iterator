@@ -29,7 +29,7 @@ int main() {
         p - c.end();
         p[2];
     }
-#if 0
+
     {
         // bidirectional iterators
         std::list<char> c(100, 0);
@@ -39,10 +39,10 @@ int main() {
         c.rend();
         auto p = c.begin();
         ++p;
-        p += 5;
+//        p += 5;
         --p;
-        p - c.end();
-        p[2];
+//        p - c.end();
+//        p[2];
     }
 
     {
@@ -59,6 +59,7 @@ int main() {
         p - c.end();
         p[2];
     }
+
 
     {
         // random-access iterators
@@ -79,17 +80,17 @@ int main() {
         // forward iterators
         std::forward_list<char> c(100, 0);
         c.begin();
-        c.rbegin();
+//        c.rbegin();
         c.end();
-        c.rend();
+//        c.rend();
         auto p = c.begin();
         ++p;
-        p += 5;
-        --p;
-        p - c.end();
-        p[2];
+//        p += 5;
+//        --p;
+//        p - c.end();
+//        p[2];
     }
-
+#if 0
     {
         // bidirectional iterators
         std::set<char> c;
